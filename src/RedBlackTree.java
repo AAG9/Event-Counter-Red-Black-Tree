@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
+
 
 
 public class RedBlackTree {
@@ -346,7 +346,7 @@ public class RedBlackTree {
 
 
     /**
-     * delete the key-value pair with the given key rooted at h
+     * delete the event id and count pair with the given key rooted at h
      * (if the key is in this symbol table)
      * @param  id
      * @param h
@@ -405,7 +405,6 @@ public class RedBlackTree {
 
     private int count(Node x, int id) {
         while (x != null) {
-
             if      (id < x.id) x = x.left;
             else if (id > x.id) x = x.right;
             else              return x.count;
@@ -489,7 +488,7 @@ public class RedBlackTree {
      * @return total count
      */
 
-    public int inRange(Node node, int id1, int id2) {
+    private int inRange(Node node, int id1, int id2) {
 
         int count=0;
         /* base case */
@@ -559,7 +558,7 @@ public class RedBlackTree {
 
         }
 
-        // If key is smaller than root's key, go to left subtree
+        // If id is smaller than root's key, go to left subtree
         else if (node.id > id)
         {
             next = node;

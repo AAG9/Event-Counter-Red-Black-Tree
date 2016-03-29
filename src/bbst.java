@@ -18,6 +18,11 @@ public class bbst {
         //Create an object of RedBlackTree class
         RedBlackTree rbTree = new RedBlackTree();
         try {
+// Initialize result
+            int count = 0;
+
+            // Keep dividing n by powers of 5 and update count
+
 
             ///home/ameya/IdeaProjects/RBT/src/test_100.txt
 
